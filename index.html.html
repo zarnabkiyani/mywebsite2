@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zarvenom Gym | Strength • Power • Discipline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #dcdcdc;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 { color: #1E90FF; }
+    a { color: #1E90FF; text-decoration: none; transition: 0.3s; }
+    a:hover { color: #66b3ff; }
+    img { max-width: 100%; border-radius: 10px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(10, 10, 10, 0.95);
+      padding: 10px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(30,144,255,0.2);
+    }
+
+    .logo-container { display: flex; align-items: center; gap: 10px; }
+    .logo-container img {
+      height: 45px; width: 45px;
+      border-radius: 50%; object-fit: cover;
+      border: 2px solid #1E90FF;
+    }
+    .logo-container h1 { font-size: 1.6em; color: #66b3ff; }
+
+    nav a { margin: 0 15px; font-weight: 600; }
+    nav a:hover { text-shadow: 0 0 8px rgba(30,144,255,0.5); }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(20,20,30,0.9)), url('gym2.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    .hero-content { max-width: 700px; padding: 0 20px; }
+    .hero h2 { font-size: 3.2em; margin-bottom: 15px; text-shadow: 0 0 15px rgba(30,144,255,0.4); }
+    .hero p { font-size: 1.2em; margin-bottom: 25px; }
+
+    .btn {
+      background: linear-gradient(90deg, #1E90FF, #0073e6);
+      color: #fff;
+      padding: 12px 35px;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.08); }
+
+    section { padding: 70px 10%; }
+    section h2 { text-align: center; margin-bottom: 40px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .box {
+      background: #141414;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(30,144,255,0.15);
+      transition: 0.3s;
+      border-top: 3px solid transparent;
+    }
+    .box:hover { transform: translateY(-8px); border-top: 3px solid #1E90FF; }
+
+    form {
+      background: #141414;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, textarea, select {
+      width: 100%; padding: 10px;
+      margin: 10px 0 20px;
+      border: none; border-radius: 6px;
+      background: #1f1f1f; color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #bbb;
+      border-top: 1px solid #222;
+    }
+
+    .socials a { margin: 0 10px; }
+    @media(max-width:768px){ header{flex-direction:column;} .hero h2{font-size:2.3em;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="logoo.png" alt="Logo">
+    <h1>Zarvenom Gym</h1>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Train Hard, Stay Humble</h2>
+    <p>Train Hard • Stay Strong • Live Focused</p>
+    <button class="btn" id="joinBtn">Join Now</button>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Zarvenom Gym</h2>
+  <p>At Zarvenom Gym, we combine cutting-edge equipment, science-based training, and elite coaching to help you achieve your full potential.</p>
+
+  <div class="grid">
+    <div class="box"><h3>Modern Equipment</h3><p>Experience top-grade machines and free weights.</p></div>
+    <div class="box"><h3>Expert Trainers</h3><p>Guidance from professionals focused on your goals.</p></div>
+    <div class="box"><h3>Nutrition Support</h3><p>Plans designed to help you grow stronger and recover faster.</p></div>
+  </div>
+</section>
+
+<section id="programs">
+  <h2>Our Programs</h2>
+  <div class="grid">
+    <div class="box program"><img src="cardiogym.jpg"><h3>Cardio Blast</h3><p>Boost endurance and stamina.</p></div>
+    <div class="box program"><img src="strengthgym.jpg"><h3>Strength & Power</h3><p>Build strength and muscle.</p></div>
+    <div class="box program"><img src="Yogagymmm.jpg"><h3>Flex & Flow</h3><p>Enhance flexibility and focus.</p></div>
+  </div>
+</section>
+
+<section id="trainers">
+  <h2>Meet Our Trainers</h2>
+  <div class="grid">
+    <div class="box trainer"><img src="tr2.jpg"><h3>John Smith</h3><p>Strength Coach | 10+ years experience.</p></div>
+    <div class="box trainer"><img src="tr1.jpg"><h3>Sarah Johnson</h2><p>Cardio & Mobility Expert.</p></div>
+    <div class="box trainer"><img src="tr3.jpg"><h3>Mike Williams</h3><p>Bodybuilding Specialist.</p></div>
+    <div class="box trainer"><img src="tr4.jpg"><h3>Edward Brown</h3><p>Yoga & Wellness Coach.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label>Name</label>
+    <input type="text" id="name" required>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Program Interested In</label>
+    <select id="program">
+      <option>Cardio</option>
+      <option>Strength</option>
+      <option>Flex & Yoga</option>
+    </select>
+
+    <label>Message</label>
+    <textarea rows="4" id="message"></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Zarvenom Gym | All Rights Reserved</p>
+  <div class="socials">
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Twitter</a>
+  </div>
+</footer>
+
+<script>
+  // Smooth Scroll
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Join Button Scroll to Contact Form
+  document.getElementById('joinBtn').addEventListener('click', () => {
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Form Validation + MongoDB Save
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const program = document.getElementById('program').value;
+    const message = document.getElementById('message').value.trim();
+
+    if(name === '' || email === ''){
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const btn = this.querySelector('button');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        name: name, 
+        email: email, 
+        program: program,
+        message: message 
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      
+      if(data.success) {
+        alert('Thank you, ' + name + '! 💪\n\nYour message has been saved in database!');
+        this.reset();
+      } else {
+        alert('Error: ' + data.message);
+      }
+    })
+    .catch(err => {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      alert('Connection Error! Make sure server is running.');
+    });
+  });
+
+  // Header Shadow Effect on Scroll
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.style.boxShadow = window.scrollY > 50 ? '0 3px 20px rgba(30,144,255,0.3)' : '0 2px 15px rgba(30,144,255,0.2)';
+  });
+  document.getElementById('contactForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    program: document.getElementById('program').value,
+    message: document.getElementById('message').value
+  };
+
+  const res = await fetch('/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  const result = await res.json();
+  alert(result.message);
+  this.reset();
+});
+</script>
+</body>
+</html>
